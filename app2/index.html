@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido de la página</title>
+</head>
+<body>
+    <h1>Contenido de la página:</h1>
+    {% if box %}
+        {% autoescape false %}
+            {{ box | safe }}
+        {% endautoescape %}
+    {% else %}
+        <p>No se encontró ningún contenido.</p>
+    {% endif %}
+</body>
+</html>
+</body>
+</html>
